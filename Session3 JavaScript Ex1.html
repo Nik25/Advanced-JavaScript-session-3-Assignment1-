@@ -1,0 +1,38 @@
+<!-- Create an object type - Car using constructor
+function. It should consist of make, model and year properties. -->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Session 3 JavaScript Ex1</title>
+<script>
+
+function Car(make, model, year) {
+	this.make = make;
+	this.model = model;
+	this.year = year;
+}
+
+
+var cadi = new Car("GM", "Cadillac", 1955 );
+
+var fiat = new Car("Fiat", "500", 1957);
+
+var cars = [cadi, fiat];
+
+ for(var i = 0; i < cars.length; i++){
+    
+	alert ("Car brand  " + cars[i].make
+	 + ", model name:  " + cars[i].model   
+	 + " and from the year  " + cars[i].year + ".");
+    
+}
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
+
